@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>14 февраля ❤️</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <canvas id="fx" aria-hidden="true"></canvas>
+
+  <div class="scroll" id="scrollRoot">
+    <main class="page">
+    <header class="hero">
+      <p class="badge">14 февраля</p>
+      <h1 class="title">Моя маленькая открытка для тебя</h1>
+      <p class="subtitle">Листай вниз — там наши моменты.</p>
+
+      <div class="music">
+        <button id="musicToggle" class="musicToggle" type="button">Включить музыку</button>
+        <audio id="bgm" src="music/The%20Weeknd%20-%20Save%20your%20tears.mp3" preload="metadata" loop></audio>
+      </div>
+    </header>
+
+    <section class="gallery" aria-label="Наши фотографии">
+      <div id="gallery" class="galleryGrid"></div>
+    </section>
+
+    <section class="question" aria-label="Вопрос">
+      <h2 class="questionTitle">Ты будешь моей валентинкой?</h2>
+
+      <div class="buttonsWrap" id="buttonsWrap">
+        <button id="yesBtn" class="btn btnYes" type="button">Да</button>
+        <button id="noBtn" class="btn btnNo" type="button">Нет</button>
+      </div>
+
+      <p id="noHint" class="hint" role="status" aria-live="polite"></p>
+      <p id="finalMsg" class="final" role="status" aria-live="polite"></p>
+    </section>
+
+    <footer class="footer">С любовью ❤️</footer>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
